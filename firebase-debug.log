@@ -1,0 +1,30 @@
+[debug] [2024-03-23T20:24:43.353Z] ----------------------------------------------------------------------
+[debug] [2024-03-23T20:24:43.355Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2024-03-23T20:24:43.356Z] CLI Version:   13.5.2
+[debug] [2024-03-23T20:24:43.356Z] Platform:      win32
+[debug] [2024-03-23T20:24:43.356Z] Node Version:  v20.11.1
+[debug] [2024-03-23T20:24:43.357Z] Time:          Sun Mar 24 2024 02:24:43 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-03-23T20:24:43.357Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-23T20:24:43.438Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-23T20:24:43.439Z] > authorizing via signed-in user (arnob001.asa@gmail.com)
+[debug] [2024-03-23T20:24:43.439Z] [iam] checking project dishdash-3d893 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-23T20:24:43.440Z] > refreshing access token with scopes: []
+[debug] [2024-03-23T20:24:43.442Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-23T20:24:43.442Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-23T20:24:43.854Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-03-23T20:24:43.854Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-23T20:24:43.875Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dishdash-3d893:testIamPermissions [none]
+[debug] [2024-03-23T20:24:43.875Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dishdash-3d893:testIamPermissions x-goog-quota-user=projects/dishdash-3d893
+[debug] [2024-03-23T20:24:43.875Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dishdash-3d893:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-23T20:24:45.582Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dishdash-3d893:testIamPermissions 200
+[debug] [2024-03-23T20:24:45.582Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dishdash-3d893:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-23T20:24:45.583Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dishdash-3d893 [none]
+[debug] [2024-03-23T20:24:46.318Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dishdash-3d893 200
+[debug] [2024-03-23T20:24:46.319Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dishdash-3d893 {"projectId":"dishdash-3d893","projectNumber":"814548416114","displayName":"dishdash","name":"projects/dishdash-3d893","resources":{"hostingSite":"dishdash-3d893","storageBucket":"dishdash-3d893.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_ed226e80-96d2-412a-bb4e-7f074d5ea5b9"}
+[info] 
+[info] === Deploying to 'dishdash-3d893'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-03-23T20:24:46.337Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dishdash-3d893/versions [none]
+[debug] [2024-03-23T20:24:46.337Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dishdash-3d893/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
